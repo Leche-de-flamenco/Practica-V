@@ -1,0 +1,36 @@
+body
+{
+    font-family:Arial;
+    
+}
+
+a
+{
+    font:black;
+    font-style: unset;
+}
+
+table   
+{
+    border:solid 1px;
+    border-spacing:10px;
+
+}
+
+#redes
+{
+   border-spacing:30px;
+}
+
+tr
+{
+    border:solid 1px;
+
+}
+
+td
+{
+    border:solid 1px;
+
+}
+
