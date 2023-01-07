@@ -1,0 +1,50 @@
+body{
+    background-image: url("imagenes/portada.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img{
+    width: 40em;
+    height: 20em;
+    margin-left: 39.5em;
+    margin-top: 2em;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#idioma{
+    margin-left: 43em;
+    margin-top: 6em;
+}
+
+div{
+    float: left;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.espanol{
+    width: 10em;
+    height: 7em;
+    border: solid black 1px;
+    border-radius: 2em;
+    background-image: url("imagenes/espanol.png");
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+}
+
+.ingles{
+    width: 10em;
+    height: 7em;
+    border: solid black 1px;
+    border-radius: 2em;
+    background-image: url("imagenes/ingles.jpg");
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+}
