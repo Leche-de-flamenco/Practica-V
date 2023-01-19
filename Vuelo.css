@@ -4,7 +4,9 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-
+div{
+    
+}
 .box{
     max-width: 100%;
     min-width: 20%;
@@ -63,4 +65,6 @@ table{
 .espanol .ingles{
     position: relative;
 }
+
+
 
