@@ -1,0 +1,63 @@
+#cabecera{
+    background-color: lightgrey;
+}
+.logo{
+    margin-left: 1em;
+    width: 14em;
+    height: 7em;
+    background-image: url("../Imagenes/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(63, 72, 204);
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: rgb( 236, 91, 149);
+}
+
+.desplegable{
+    position: absolute;
+    display: none;
+    padding-left: 1px;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(63, 72, 204);
+}
+
+.menu li:hover .desplegable{
+    display: block;
+}
+
+.desplegable li:hover{
+    background-color: rgb( 236, 91, 149);
+}
+
+.desplegable li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+
+
