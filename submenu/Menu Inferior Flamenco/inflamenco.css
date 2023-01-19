@@ -1,0 +1,52 @@
+body
+{
+    font-family:Arial;
+    
+}
+
+a:visited
+{
+    color: #c06c84;
+    text-decoration:none;
+    
+}
+
+a:link
+{
+    text-decoration:none;
+    color: #c55675;
+    padding:5px;
+    
+    
+}
+
+table   
+{
+    border:solid #8754b4;
+    border-spacing:10px;
+    padding: 10px;
+    background-color: #355c7d;
+    
+
+}
+
+th
+{
+    padding:20px;
+    color: #c55272;
+    
+}
+
+tr
+{
+    padding:20px;
+    color: #c06c84;
+
+}
+
+td
+{
+    padding:20px;
+    
+}
+
