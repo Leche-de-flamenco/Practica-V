@@ -53,6 +53,82 @@
     
 }
 
+.Jorge body
+{
+    font-family:Arial;
+    
+}
+
+.Jorge a:visited
+{
+    color: #c06c84;
+    text-decoration:none;
+    
+}
+
+.Jorge a:link
+{
+    text-decoration:none;
+    color: #c55675;
+    padding:5px;
+    
+    
+}
+
+.Jorge table   
+{
+    border:solid #8754b4;
+    border-spacing:10px;
+    padding: 10px;
+    background-color: #355c7d;
+    
+
+}
+
+.Jorge th
+{
+    padding:20px;
+    color: #c55272;
+    
+}
+
+.Jorge tr
+{
+    padding:20px;
+    color: #c06c84;
+
+}
+
+.Jorge td
+{
+    padding:20px;
+    
+}
+
+.Jorge .descarga
+{
+	height:170px;
+	border:solid 1px;
+	width:510px;
+	position:relative;
+	bottom:220px;
+	left:700px;
+}
+
+.Jorge .google 
+{
+	border:solid 1px;
+
+   
+}
+
+.Jorge .apple
+{
+	border:solid 1px;
+	
+}
+
+
 
 
 
