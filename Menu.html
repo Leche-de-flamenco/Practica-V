@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="Menu.css" rel="stylesheet" type="text/css"> 
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="Alejandro"></div>
+    
+    <div class="Victor">
+    
+    <nav>
+            <ul class="menu">
+                <li class="lista"><a  href="#" onclick="showForm('formularioida')"><span></span>Ida</a></li>
+                <li class="lista"><a  href="#" onclick="showForm('formulariovuelta')"><span></span>Ida y Vuelta</a></li>
+
+            </ul>        
+                        <fieldset id="formularioida" style="display: none">
+
+                        <table border="1">
+                            <form>    
+                                <tr> 
+                                    <th>
+                                    Introduzca origen
+                                    <input type="tel" placeholder="Tenerife">
+                                    </th>   
+                                    
+                                    <th>
+                                    Introduzca destino
+                                    <input type="tel" placeholder="Madrid">
+                                    </th> 
+                                
+                                </tr>
+                                
+                                <tr>
+                                <th>
+                                        Ida
+                                        <input type="datetime-local" placeholder="local" >    
+            
+                                </th>
+                                <th>
+                                        Numero de pasajeros
+                                        <select name="pasj">
+                                            <option selected="">1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                </th>
+                            
+                            </tr>
+                            <tr>
+                                <th>
+                                    Num.Adultos
+                                    <select  name="pasj">
+                                        <option selected=""></option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+
+                                </th>
+                                <th>
+                                    Num.Niños
+                                    <select  name="pasj">
+                                        <option selected=""></option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Descuento de residente
+                                    <input type="checkbox">
+                                </th>
+
+                                <th>
+                                    Asiento Extra
+                                    <input type="checkbox">
+                                </th>
+            
+                                
+                                
+                                <th class="boton" colspan="2">
+                                        
+                                    <input type="button" href="*" value="Buscar"> 
+                                    
+                                </th> 
+                            
+                            </tr>
+                                </form>
+                            </table>
+                            </fieldset>
+
+                            
+                        <fieldset id="formulariovuelta" style="display: none">
+
+                            <table border="1">
+                            <form>    
+                                <tr> 
+                                    <th>
+                                    Introduzca origen
+                                    <input type="tel" placeholder="Tenerife">
+                                    </th>   
+                                    
+                                    <th>
+                                    Introduzca destino
+                                    <input type="tel" placeholder="Madrid">
+                                    </th> 
+                                
+                                </tr>
+                                
+                                <tr>
+                                <th>
+                                        Ida
+                                        <input type="datetime-local" placeholder="local" >
+                                        Vuelta
+                                        <input type="datetime-local" placeholder="local" >    
+            
+                                </th>
+                                <th>
+                                        Numero de pasajeros
+                                        <select name="pasj">
+                                            <option selected="">1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                </th>
+                            
+                            </tr>
+                            <tr>
+                                <th>
+                                    Num.Adultos
+                                    <select  name="pasj">
+                                        <option selected=""></option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+    
+                                </th>
+                                <th>
+                                    Num.Niños
+                                    <select  name="pasj">
+                                        <option selected=""></option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Descuento de residente
+                                    <input type="checkbox">
+                                </th>
+    
+                                <th>
+                                    Asiento Extra
+                                    <input type="checkbox">
+                                </th>
+            
+                                
+                                
+                                <th class="boton" colspan="2">
+                                        
+                                    <input type="button" href="*" value="Buscar"> 
+                                    
+                                </th> 
+                                
+                            </tr>
+                                </form>
+                            </table>
+                            </fieldset>
+            </nav>
+     </div>
+
+
+    <div class="Alberto"></div>
+    
+    <div class="Jorge"></div>
+
+
+     <!--script para formulario Victor-->
+    <script>
+        function showForm(formId) {
+            var formularioIda = document.getElementById("formularioida");
+            var formularioVuelta = document.getElementById("formulariovuelta");
+            if (formId === "formularioida") {
+                formularioIda.style.display = "block";
+                formularioVuelta.style.display = "none";
+            } else {
+                formularioIda.style.display = "none";
+                formularioVuelta.style.display = "block";
+            }
+        
+        }      
+   </script>   
+
+</body>
+</html>

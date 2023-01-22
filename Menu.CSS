@@ -1,0 +1,60 @@
+.Victor{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: center;
+    margin-left:35%  ;
+}
+
+.Victor fieldset{
+    position: relative;
+    background-color: pink;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2em;
+    display: none;
+    transition: display 2s;
+}
+
+.Victor ul{
+    background-color: pink;
+    border: 1px solid black;
+    border-style: none;
+    width: 520px;
+    height: 30px;
+    border-radius: 2em;
+    margin: auto;
+    align-items: initial
+}
+
+
+.Victor a{
+    color: black;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.Victor li{
+    display: inline;
+    padding-left: 3px;
+    padding-right:3px ;
+    content: hidden;
+}
+
+.Victor table,th{
+    border: none;
+   
+}
+
+.Victor input[type=submit]{
+    
+    border-radius: 1em ;
+    
+}
+
+
+
+
+
+
