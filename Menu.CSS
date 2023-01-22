@@ -1,3 +1,64 @@
+#Alejandrocabecera{
+    background-color: lightgrey;
+}
+.Alejandrologo{
+    margin-left: 1em;
+    width: 14em;
+    height: 7em;
+    background-image: url("RecursosGraficos/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Alejandrotodo{
+    max-width: 100%;
+    margin: auto;  
+    margin-top: -20px;
+}
+
+.Alejandromenu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    background-color: rgb(63, 72, 204);
+    margin-top: -1px;
+}
+
+.Alejandromenu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.Alejandromenu li:hover{
+    background-color: rgb( 236, 91, 149);
+}
+
+.Alejandrodesplegable{
+    position: absolute;
+    display: none;
+    padding-left: 1px;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(63, 72, 204);
+}
+
+.Alejandromenu li:hover .Alejandrodesplegable{
+    display: block;
+}
+
+.Alejandrodesplegable li:hover{
+    background-color: rgb( 236, 91, 149);
+}
+
+.Alejandrodesplegable li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
 .Victor{
     background-color: white;
     width: fit-content;
