@@ -1,3 +1,10 @@
-form[action='Checkin2'] {
-    display: none;   
+form{
+position: relative;
+background-color: pink;
+border: 1px solid black;
+width: fit-content;
+height: fit-content;
+border-radius: 2em;
+display: none;
+transition: display 2s;
 }
