@@ -55,15 +55,14 @@
     <div class="Victor">
 
         <nav>
-            <ul class="menu">
-                <li class="lista"><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></li>
-                <li class="lista"><a href="#" onclick="showForm('formulariovuelta')"><span></span>Ida y Vuelta</a></li>
-
-            </ul>
-            <fieldset id="formularioida" style="display: none">
+            
+            <fieldset id="formularioida" style="display: block">
 
                 <table border="1">
                     <form>
+                        <tr>
+                            <a href="#" onclick="showForm('formularioVuelta')"><span></span>Ida</a>
+                        </tr>
                         <tr>
                             <th>
                                 Introduzca origen
@@ -149,6 +148,9 @@
 
                 <table border="1">
                     <form>
+                        <tr>
+                            <th><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></th>
+                        </tr>
                         <tr>
                             <th>
                                 Introduzca origen
@@ -339,10 +341,10 @@
             var formularioIda = document.getElementById("formularioida");
             var formularioVuelta = document.getElementById("formulariovuelta");
             if (formId === "formularioida") {
-                formularioIda.style.display = "block";
+                formularioIda.style.display="block";
                 formularioVuelta.style.display = "none";
             } else {
-                formularioIda.style.display = "none";
+                formularioIda.style.display="none";
                 formularioVuelta.style.display = "block";
             }
 
