@@ -15,6 +15,7 @@
     width: fit-content;
     height: fit-content;
     border-radius: 2em;
+    z-index:0;
 }
 
 
@@ -245,6 +246,7 @@
     list-style: none;
     width: 200px;
     background-color: rgb(63, 72, 204);
+    z-index: 1;
 }
 
 .Alejandromenu li:hover .Alejandrodesplegable{
