@@ -139,6 +139,9 @@
                             </th>
 
                         </tr>
+                        <tr>
+                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
+                        </tr>
                     </form>
                 </table>
             </fieldset>
@@ -228,6 +231,9 @@
 
                             </th>
 
+                        </tr>
+                        <tr>
+                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
                         </tr>
                     </form>
                 </table>
@@ -340,6 +346,7 @@
         function showForm(formId) {
             var formularioIda = document.getElementById("formularioida");
             var formularioVuelta = document.getElementById("formulariovuelta");
+           
             if (formId === "formularioida") {
                 formularioIda.style.display="block";
                 formularioVuelta.style.display = "none";
@@ -347,6 +354,11 @@
                 formularioIda.style.display="none";
                 formularioVuelta.style.display = "block";
             }
+            if(formId== "ocultar"){
+                formularioIda.style.display = "none";
+                formularioVuelta.style.display = "none";
+            }
+            
 
         }      
     </script>
