@@ -55,14 +55,15 @@
     <div class="Victor">
 
         <nav>
-            
-            <fieldset id="formularioida" style="display: block">
+            <ul class="menu">
+                <li class="lista"><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></li>
+                <li class="lista"><a href="#" onclick="showForm('formulariovuelta')"><span></span>Ida y Vuelta</a></li>
+
+            </ul>
+            <fieldset id="formularioida" style="display: none">
 
                 <table border="1">
                     <form>
-                        <tr>
-                            <a href="#" onclick="showForm('formularioVuelta')"><span></span>Ida Y Vuelta</a>
-                        </tr>
                         <tr>
                             <th>
                                 Introduzca origen
@@ -151,9 +152,6 @@
 
                 <table border="1">
                     <form>
-                        <tr>
-                            <th><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></th>
-                        </tr>
                         <tr>
                             <th>
                                 Introduzca origen
@@ -298,13 +296,13 @@
                 </tr>
                 <tr id="redes">
                     <th scope="col"><a href="https://www.twitter.com/" target="_blank"><img
-                                src="RecursosGraficos/logo twitter.png"></a></th>
+                                src="RecursosGraficos/twitter.png"></a></th>
                     <th scope="col"><a href="https://www.youtube.com/" target="_blank"><img
-                                src="RecursosGraficos/logo youtube.png"></a></th>
+                                src="RecursosGraficos/youtube.png"></a></th>
                     <th scope="col"><a href="https://www.instagram.com/" target="_blank"><img
-                                src="RecursosGraficos/logo instagram.png"></a></th>
+                                src="RecursosGraficos/instagram.png"></a></th>
                     <th scope="col"><a href="https://www.facebook.com/" target="_blank"><img
-                                src="RecursosGraficos/logo facebook.png"></a></th>
+                                src="RecursosGraficos/facebook.png"></a></th>
                 </tr>
             </thead>
             <tr>
@@ -348,10 +346,10 @@
             var formularioVuelta = document.getElementById("formulariovuelta");
            
             if (formId === "formularioida") {
-                formularioIda.style.display="block";
+                formularioIda.style.display = "block";
                 formularioVuelta.style.display = "none";
             } else {
-                formularioIda.style.display="none";
+                formularioIda.style.display = "none";
                 formularioVuelta.style.display = "block";
             }
             if(formId== "ocultar"){
