@@ -4,24 +4,12 @@
     width: fit-content;
     height: fit-content;
     justify-content: center;
-<<<<<<< HEAD
     margin-left:30%;
-=======
     margin:auto;
->>>>>>> main
 }
 
 .Victor fieldset{
     position: relative;
-<<<<<<< HEAD
-    margin: auto;
-    background-color:#EC5B95;
-    border: 1px solid #3F48CC;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 2em;
-    z-index:0;
-=======
     background-color: #EC5B95;
     border: 1px solid black;
     width: fit-content;
@@ -39,8 +27,7 @@
     height: 30px;
     border-radius: 2em;
     margin: center;
-    align-items: initial
->>>>>>> main
+    align-items: initial ;
 }
 
 
@@ -51,8 +38,8 @@
 
 .Victor li{
     display: inline;
-    padding-left: 3px;
-    padding-right:3px ;
+    padding-left: 10%;
+    padding-right: 28%;
     content: hidden;
 }
 
