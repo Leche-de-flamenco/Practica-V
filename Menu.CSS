@@ -12,23 +12,45 @@
     position: relative;
     background-color: #EC5B95;
     border: 1px solid black;
-    width: 600px;
-    height: 200px;
+    width: 1000px;
+    height: 140px;
     border-radius: 2em;
     display: none;
     transition: display 2s;
     margin-bottom: 20px;
 }
+.Victor .contenido{
+    position: relative;
+    left: 20%;
+}
 
-.Victor ul{
+.Victor .cambform{
+
+    border: solid;
+    border-color: black;
     background-color: #EC5B95;
-    border: 1px solid black;
-    border-style: none;
-    width: 500px;
-    height: 30px;
-    border-radius: 2em;
-    margin: center;
-    align-items: initial ;
+   
+} 
+.Victor .cambform input{
+
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+    -webkit-appearance: button; /* for input */
+        -moz-user-select: none;
+        -ms-user-select: none;
+
+}
+.Victor .cambform input:hover{
+   
+    transition: 0.5s;
+    color: #EC5B95;
+
 }
 
 
@@ -49,10 +71,25 @@
    
 }
 
-.Victor input[type=submit]{
-    
+.Victor input[type=button]{
+
+    border-radius: 1em;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: button; /* for input */
+       -moz-user-select: none;
+        -ms-user-select: none;
+    transition: 0.5s;
+    }
+.Victor .boton input[type=button]:hover{
     border-radius: 1em ;
-    
+    background-color: aliceblue;
+    color:#EC5B95;
 }
 .alberto .verano{
     margin: auto;
