@@ -1,0 +1,70 @@
+body{
+    background-image: url("imagenes/portada.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div{
+    
+}
+.box{
+    max-width: 100%;
+    min-width: 20%;
+    max-height: 200%;
+    min-height: 20%;
+}
+
+img{
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+    
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+table{
+    position: absolute;
+    width: 25%;
+    height: 15%;
+    margin-left: -3%;
+}
+
+#idioma{
+    width: 20%;
+    height: 40%;
+    margin-left: 38%;  
+}
+
+.espanol{
+    width: 10%;
+    height: 5%;
+    border: solid black 1px;
+    border-radius: 2em;
+    background-image: url("imagenes/espanol.png");
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    background-size: cover;  
+    border: solid; 
+}
+
+.ingles{
+    width: 10%;
+    height: 5%;
+    border: solid black 1px;
+    border-radius: 2em;
+    background-image: url("imagenes/ingles.jpg");
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    border: solid;
+}
+
+.espanol .ingles{
+    position: relative;
+}
+
+
+
