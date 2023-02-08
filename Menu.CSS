@@ -12,8 +12,8 @@
     position: relative;
     background-color: #EC5B95;
     border: 1px solid black;
-    width: fit-content;
-    height: fit-content;
+    width: 600px;
+    height: 200px;
     border-radius: 2em;
     display: none;
     transition: display 2s;

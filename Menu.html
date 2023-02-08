@@ -55,12 +55,7 @@
     <div class="Victor">
 
         <nav>
-            <ul class="menu">
-                <li class="lista"><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></li>
-                <li class="lista"><a href="#" onclick="showForm('formulariovuelta')"><span></span>Ida y Vuelta</a></li>
-
-            </ul>
-            <fieldset id="formularioida" style="display: none">
+            <fieldset id="formularioida" style="display: block">
 
                 <table border="1">
                     <form>
@@ -141,7 +136,7 @@
 
                         </tr>
                         <tr>
-                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
+                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Formulario Ida y Vuelta">
                         </tr>
                     </form>
                 </table>
@@ -231,7 +226,7 @@
 
                         </tr>
                         <tr>
-                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
+                            <input type="button" a href="#" onclick="showForm('ocultar2')" value="Formulario Ida">
                         </tr>
                     </form>
                 </table>
@@ -345,18 +340,14 @@
             var formularioIda = document.getElementById("formularioida");
             var formularioVuelta = document.getElementById("formulariovuelta");
            
-            if (formId === "formularioida") {
-                formularioIda.style.display = "block";
-                formularioVuelta.style.display = "none";
-            } else {
-                formularioIda.style.display = "none";
-                formularioVuelta.style.display = "block";
-            }
+          
             if(formId== "ocultar"){
                 formularioIda.style.display = "none";
+                formularioVuelta.style.display = "block";
+            }if(formId== "ocultar2"){
+                formularioIda.style.display = "block";
                 formularioVuelta.style.display = "none";
-            }
-            
+            } 
 
         }      
     </script>
