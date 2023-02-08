@@ -6,7 +6,27 @@
     justify-content: center;
     margin-left:30%;
     margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+    .Victor table, tr, th, td {
+      display: block;
+    }
+    .Victor th {
+      margin-bottom: 10px;
+    }
+    .Victor input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    .Victor input[type="button"], input[type="submit"] {
+      width: 100%;
+    }
+  }
+  
 .Victor .cuadro1{
     position: absolute;
     border-bottom:solid 2px;
@@ -20,7 +40,7 @@
     border-right: solid 2px;
     border-color: black;
     height:140px;
-    left: 18%;
+    left: 19%;
 }
 
 .Victor .cuadro3{
@@ -28,7 +48,7 @@
     border-right: solid 2px;
     border-color: black;
     height:140px;
-    left: 12%;  
+    left: 12.5%;  
 }
 
 .Victor fieldset{
