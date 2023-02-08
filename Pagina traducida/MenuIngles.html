@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Menu.css" rel="stylesheet" type="text/css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="Alejandro">
+        <div id="Alejandrocabecera">
+            <div class="Alejandrologo"></div>
+        </div>
+
+        <nav class="alejandrotodo">
+            <ul class="Alejandromenu">
+                <li><a href="Alejandromenu1">Main</a></li>
+
+                <li>
+                    <a href="Alejandromenu1">Flights</a>
+                    <ul class="Alejandrodesplegable">
+                        <li><a href="Check-in.html">Online check-in</a></li>
+                        <li><a href="Alejandromenu1">Manage your reservation</a></li>
+                        <li><a href="Alejandromenu1">State of your flight</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Alejandromenu1">Hoteles</a>
+                    <ul class="Alejandrodesplegable">
+                        <li><a href="Alejandromenu1">Reservations</a></li>
+                        <li><a href="Alejandromenu1">Manage your reservation</a></li>
+                        <li><a href="Alejandromenu1">Flight-Hotel</a></li>         
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Login.html">Login</a>
+                    <ul class="Alejandrodesplegable">
+                        <li><a href="Alejandromenu1">Our policies</a></li>
+                        <li><a href="Alejandromenu1">FAQ</a></li>
+                        <li><a href="Alejandromenu1">Contact information</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+    <div class="Victor">
+
+        <nav>
+            <ul class="menu">
+                <li class="lista"><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></li>
+                <li class="lista"><a href="#" onclick="showForm('formulariovuelta')"><span></span>Ida y Vuelta</a></li>
+
+            </ul>
+            <fieldset id="formularioida" style="display: none">
+
+                <table border="1">
+                    <form>
+                        <tr>
+                            <th>
+                                Select origin
+                                <input type="tel" placeholder="Tenerife">
+                            </th>
+
+                            <th>
+                                Select destination
+                                <input type="tel" placeholder="Madrid">
+                            </th>
+
+                        </tr>
+
+                        <tr>
+                            <th>
+                                Ida
+                                <input type="datetime-local" placeholder="local">
+
+                            </th>
+                            <th>
+                                Number of passengers
+                                <select name="pasj">
+                                    <option selected="">1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <th>
+                                Number of adults
+                                <select name="pasj">
+                                    <option selected=""></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                            </th>
+                            <th>
+                                Number of children
+                                <select name="pasj">
+                                    <option selected=""></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Resident discount
+                                <input type="checkbox">
+                            </th>
+
+                            <th>
+                                Extra seat
+                                <input type="checkbox">
+                            </th>
+
+
+
+                            <th class="boton" colspan="2">
+
+                                <input type="button" href="*" value="Buscar">
+
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
+                        </tr>
+                    </form>
+                </table>
+            </fieldset>
+
+
+            <fieldset id="formulariovuelta" style="display: none">
+
+                <table border="1">
+                    <form>
+                        <tr>
+                            <th>
+                                Select origin place
+                                <input type="tel" placeholder="Tenerife">
+                            </th>
+
+                            <th>
+                                Select destination
+                                <input type="tel" placeholder="Madrid">
+                            </th>
+
+                        </tr>
+
+                        <tr>
+                            <th>
+                                Departure date
+                                <input type="datetime-local" placeholder="local">
+                                Return date
+                                <input type="datetime-local" placeholder="local">
+
+                            </th>
+                            <th>
+                                Number of passengers
+                                <select name="pasj">
+                                    <option selected="">1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <th>
+                                Number of adults
+                                <select name="pasj">
+                                    <option selected=""></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                            </th>
+                            <th>
+                                Number of children
+                                <select name="pasj">
+                                    <option selected=""></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Resident discount
+                                <input type="checkbox">
+                            </th>
+
+                            <th>
+                                Extra seat
+                                <input type="checkbox">
+                            </th>
+
+
+
+                            <th class="boton" colspan="2">
+
+                                <input type="button" href="*" value="Buscar">
+
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
+                        </tr>
+                    </form>
+                </table>
+            </fieldset>
+        </nav>
+    </div>
+
+
+    <div class="alberto">
+        <div class="verano">
+            <img src="RecursosGraficos/Verano.jpg">
+            <h2>This summer, travel at the best price</h2>
+            <ul>
+                <li>Beach escapades <span>from 59€</span></li>
+                <li>Europe escapades <span>from 119€</span></li>
+                <li>Travel to the asian south-east <span>from 399€</span></li>
+                <li>Travel to South America from 499€</li>
+            </ul>
+            <a href="">Book now until the 15th of February</a>
+        </div>
+        <div class="ofertas">
+            <div calss="Londres">
+                <a href=""><img src="RecursosGraficos/Londres.jfif">
+                    <h3>Fly, fly...</h3>
+                    <p>Flights to London from 29€</p>
+                </a>
+            </div>
+            <div calss="Paris">
+                <a href=""><img src="RecursosGraficos/Paris.jfif">
+                    <h3>To enjoy together</h3>
+                    <p>Flights to Paris from 19€</p>
+                </a>
+            </div>
+            <div calss="NewYork">
+                <a href=""><img src="RecursosGraficos/NewYork.jfif">
+                    <h3>Do you dare?</h3>
+                    <p>Travel across the sea from 339€</p>
+                </a>
+            </div>
+            <div calss="Barcelona">
+                <a href=""><img src="RecursosGraficos/Barcelona.jfif">
+                    <h3>Travel to the trending city!</h3>
+                    <p>Best price. From now until the 31st of March!</p>
+                </a>
+            </div>
+            <div calss="Dubai">
+                <a href=""><img src="RecursosGraficos/Dubai.jfif">
+                    <h3>Oasis in the desert...</h3>
+                    <p>Flights + 7 nights in a Hotel in Dubai from 899€</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Jorge">
+        <table class="contacto">
+            <thead class="cabecera">
+                <tr>
+                    <th rowspan="2" scope="col">CUSTOMER SERVICE</th>
+                    <th rowspan="2" colspan="4" scope="col">AIRPORTS IN COOPERATION</th>
+                    <th colspan="4" rowspan="2" scope="col">CONTACT WITH US</th>
+                </tr>
+                <tr id="redes">
+                    <th scope="col"><a href="https://www.twitter.com/" target="_blank"><img
+                                src="RecursosGraficos/twitter.png"></a></th>
+                    <th scope="col"><a href="https://www.youtube.com/" target="_blank"><img
+                                src="RecursosGraficos/youtube.png"></a></th>
+                    <th scope="col"><a href="https://www.instagram.com/" target="_blank"><img
+                                src="RecursosGraficos/instagram.png"></a></th>
+                    <th scope="col"><a href="https://www.facebook.com/" target="_blank"><img
+                                src="RecursosGraficos/facebook.png"></a></th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Información de interés</td>
+                <td><a href="https://www.qatarairways.com/es-es/about-qatar-airways.html" target="_blank">Qatar
+                        Airways</a></td>
+                <td><a href="https://www.britishairways.com/es-es/information/about-ba?source=BOT_about_ba"
+                        target="_blank">British Airways</a></td>
+
+            </tr>
+
+            <tr>
+                <td>Atención al cliente</td>
+                <td><a href="https://contenido.bintercanarias.com/binteragenciadeviajes" target="_blank">Binter
+                        Canarias</a></td>
+                <td><a href="https://germanairways.com/en/" target="_blank">German Airways</a></td>
+            </tr>
+
+            <tr>
+                <td>Información de vuelos</td>
+                <td><a href="https://grupo.iberia.es/about_us" target="_blank">Iberia España</a></td>
+                <td><a href="https://www.aireuropa.com/es/es/aea/informacion-para-volar/informacion-corporativa.html"
+                        target="_blank">Air Europa</a></td>
+            </tr>
+
+        </table>
+
+        <div class="descarga">
+
+            <img class="google" src="RecursosGraficos/googleplay.png">
+            <img class="apple" src="RecursosGraficos/appstore.png">
+
+        </div>
+    </div>
+
+
+    <!--script para formulario Victor-->
+    <script>
+        function showForm(formId) {
+            var formularioIda = document.getElementById("formularioida");
+            var formularioVuelta = document.getElementById("formulariovuelta");
+           
+            if (formId === "formularioida") {
+                formularioIda.style.display = "block";
+                formularioVuelta.style.display = "none";
+            } else {
+                formularioIda.style.display = "none";
+                formularioVuelta.style.display = "block";
+            }
+            if(formId== "ocultar"){
+                formularioIda.style.display = "none";
+                formularioVuelta.style.display = "none";
+            }
+            
+
+        }      
+    </script>
+
+</body>
+
+</html>
