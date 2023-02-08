@@ -7,6 +7,22 @@
     margin-left:30%;
     margin:auto;
 }
+.Victor .cuadro1{
+    position: absolute;
+    border-bottom:solid 2px;
+    border-color: black;
+    width: 1000px;
+    top: 18%;
+}
+
+.Victor .cuadro2{
+    position: absolute;
+    border-right: solid 2px;
+    border-color: black;
+    height:140px;
+    left: 18%;
+}
+
 
 .Victor fieldset{
     position: relative;
@@ -31,6 +47,9 @@
     background-color: #EC5B95;
    
 } 
+.Victor tr{
+    border:solid ;
+}
 .Victor .cambform input{
 
     border: 0;
@@ -66,9 +85,8 @@
     content: hidden;
 }
 
-.Victor table,th{
-    border: none;
-   
+.Victor .cambform{
+    border: solid;
 }
 
 .Victor input[type=button]{
@@ -85,7 +103,9 @@
        -moz-user-select: none;
         -ms-user-select: none;
     transition: 0.5s;
-    }
+}
+
+
 .Victor .boton input[type=button]:hover{
     border-radius: 1em ;
     background-color: aliceblue;
