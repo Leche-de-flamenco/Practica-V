@@ -1,11 +1,78 @@
-.Victor{
-    background-color: white;
-    width: fit-content;
-    height: fit-content;
-    margin: center;
-    margin-left:35%  ;
+body{
+    background-image: url("RecursosGraficos/FondoMenu.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
 }
 
+#Alejandrocabecera{
+    background: url("RecursosGraficos/Fondo.jfif");
+    background-size: cover;
+}
+.Alejandrologo{
+    width: 14em;
+    height: 7em;
+    background-image: url("RecursosGraficos/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Alejandrotodo{
+    max-width: 100%;
+}
+
+.Alejandromenu{
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    background-color: rgb(63, 72, 204);
+}
+
+.Alejandromenu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.Alejandromenu li:hover{
+    background-color: rgb(233, 132, 172);
+}
+
+.Alejandrodesplegable{
+    position: absolute;
+    display: none;
+    padding-left: 1px;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(63, 72, 204);
+}
+
+.Alejandromenu li:hover .Alejandrodesplegable{
+    display: block;
+}
+
+.Alejandrodesplegable li:hover{
+    background-color: rgb( 233, 132, 172);
+}
+
+.Alejandrodesplegable li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.Victor{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 5%;
+}
 .Victor fieldset{
     position: relative;
     background-color: pink;
@@ -54,13 +121,14 @@
 }
 .alberto .verano{
     margin: auto;
-    border-top: solid thick rgb(240, 61, 186);
+    border-top: solid 10px rgb(233, 132, 172);
     border-bottom: solid thick rgb(34, 34, 164) ;
     max-width: max-content;
     background-color: rgb(34, 34, 164);
-    color:rgb(240, 61, 186);
+    color:rgb(233, 132, 172);
     font-family: sans-serif;
     margin-bottom: 5%;
+    border-radius: 10px/10px;
 }
 .alberto h2{
     padding-left: 10%;
@@ -77,7 +145,7 @@
     list-style-position: inside;
 }
 .alberto .verano img{
-    width: 500px;
+    width: 400px;
     height: 200px;
 }
 .alberto .verano a{
@@ -89,7 +157,7 @@
     margin-bottom: 5%;
     padding: 3%;
     text-align: center;
-    background-color:rgb(240, 61, 186) ;
+    background-color:rgb(233, 132, 172) ;
     border:solid black;
     box-shadow: 2px 2px 2px black;
     text-decoration: none;
@@ -101,15 +169,28 @@
 .alberto .verano a:hover{
     font-size:large;
 }
-.alberto .ofertas div{
+.alberto .ofertas{
+    position: absolute;
+    width: 170%;
+    animation: promociones 15s linear infinite;
+
+}
+.alberto .ofertas2{
+    position: absolute;
+    width: 170%;
+    left: 170%;
+    animation: promociones2 15s linear infinite ;
+
+}
+.alberto .ofertas div, .alberto .ofertas2 div{
     float: left;
     margin: 2%;
-    border-top: solid thick rgb(240, 61, 186);
-    border-bottom: solid thick rgb(34, 34, 164) ;
+    border-top: solid thick rgb(233, 132, 172);
+    border-bottom: solid thick rgb(86, 86, 192);
     max-width: max-content;
     max-height: fit-content;
-    background-color: rgb(34, 34, 164);
-    color:rgb(240, 61, 186);
+    background-color: rgb(86, 86, 192);
+    color:rgb(233, 132, 172);
     font-family: sans-serif;
     margin-bottom: 3%;
     width: 250px;
@@ -117,31 +198,32 @@
     transition: 1s;
 
 }
-.alberto .ofertas img{
+.alberto .ofertas img,.alberto .ofertas2 img{
     width: 250px;
     height: 150px;
 }
-.alberto .ofertas p,h3{
+.alberto .ofertas p,h3,.alberto .ofertas2 p,h3{
     padding: 3%;
 }
-.alberto .ofertas div:hover{
-    box-shadow: 0 0 10px 5px rgb(240, 61, 186);
+.alberto .ofertas div:hover,.alberto .ofertas2 div:hover{
+    box-shadow: 0 0 10px 5px rgb(233, 132, 172);
     transform: rotateX('10');
     transform: scale(1.2);
 }
-.alberto .ofertas a{
+.alberto .ofertas a,.alberto .ofertas2 a{
     display: block;
     text-decoration: none;
-    color:rgb(240, 61, 186);
-
+    color:rgb(233, 132, 172);
+}
+ @keyframes promociones{
+    from{left:0%;}
+    to{left:-170%;}
+}
+@keyframes promociones2{
+    from{left:170%;}
+    to{left:0%;}
 }
 
-
-.Jorge body
-{
-    font-family:Arial;
-    
-}
 
 .Jorge a:visited
 {
@@ -155,12 +237,12 @@
     text-decoration:none;
     color: #c55675;
     padding:5px;
-    
-    
 }
 
 .Jorge table   
 {
+    position: absolute;
+    top: 225%;
     border:solid #8754b4;
     border-spacing:10px;
     padding: 10px;
@@ -189,33 +271,18 @@
     
 }
 
-.Jorge .descarga
-{
-
-    height:170px;
-    border:solid 1px;
-    width:510px;
-    position:relative;
-    bottom:220px;
-    left:700px;
-}
 
 .Jorge .google 
 {
-    border:solid 1px;
+    height:200px;
+    width:200px;
 
    
 }
 
 .Jorge .apple
 {
-    border:solid 1px;
-	
+    height:120px;
+    width:240px;
+
 }
-
-
-
-
-
-
-

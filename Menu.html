@@ -12,7 +12,46 @@
 
 <body>
 
-    <div class="Alejandro"></div>
+    <div class="Alejandro">
+        <div id="Alejandrocabecera">
+            <div class="Alejandrologo"></div>
+
+        </div>
+
+        <nav class="alejandrotodo">
+            <ul class="Alejandromenu">
+                <li><a href="Menu.html">Inicio</a></li>
+
+                <li>
+                    <a href="">Vuelos</a>
+                    <ul class="Alejandrodesplegable">
+                        <li><a href="Check-in.html">Check-in online</a></li>
+                        <li><a href="">Gestiona tu reserva</a></li>
+                        <li><a href="">Estado de los vuelos</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">Hoteles</a>
+                    <ul class="Alejandrodesplegable">
+                        <li><a href="">Reservas</a></li>
+                        <li><a href="">Gestiona tu reserva</a></li>
+                        <li><a href="">Hotel-Vuelo</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Login.html">Login</a>
+                    <ul class="Alejandrodesplegable">
+                        <li><a href="">Nuestra política</a></li>
+                        <li><a href="">preguntas frecuentes</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
 
     <div class="Victor">
 
@@ -29,12 +68,26 @@
                         <tr>
                             <th>
                                 Introduzca origen
-                                <input type="tel" placeholder="Tenerife">
+                                <select name="origen">
+                                    <option selected="">Elija su destino</option>
+                                    <option>Dubai</option>
+                                    <option>Londres</option>
+                                    <option>Barcelona</option>
+                                    <option>NewYork</option>
+                                    <option>París</option>
+                                </select><input type="tel" placeholder="Tenerife">
                             </th>
 
                             <th>
                                 Introduzca destino
-                                <input type="tel" placeholder="Madrid">
+                                <select name="origen">
+                                    <option selected="">Elija su destino</option>
+                                    <option>Dubai</option>
+                                    <option>Londres</option>
+                                    <option>Barcelona</option>
+                                    <option>NewYork</option>
+                                    <option>París</option>
+                                </select>
                             </th>
 
                         </tr>
@@ -48,7 +101,8 @@
                             <th>
                                 Numero de pasajeros
                                 <select name="pasj">
-                                    <option selected="">1</option>
+                                    <option selected=""></option>
+                                    <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
@@ -71,16 +125,6 @@
 
                             </th>
                             <th>
-                                Num.Niños
-                                <select name="pasj">
-                                    <option selected=""></option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </th>
                         </tr>
                         <tr>
                             <th>
@@ -114,12 +158,26 @@
                         <tr>
                             <th>
                                 Introduzca origen
-                                <input type="tel" placeholder="Tenerife">
+                                <select name="origen">
+                                    <option selected="">Elija su destino</option>
+                                    <option>Dubai</option>
+                                    <option>Londres</option>
+                                    <option>Barcelona</option>
+                                    <option>NewYork</option>
+                                    <option>París</option>
+                                </select>
                             </th>
 
                             <th>
                                 Introduzca destino
-                                <input type="tel" placeholder="Madrid">
+                                <select name="origen">
+                                    <option selected="">Elija su destino</option>
+                                    <option>Dubai</option>
+                                    <option>Londres</option>
+                                    <option>Barcelona</option>
+                                    <option>NewYork</option>
+                                    <option>París</option>
+                                </select>
                             </th>
 
                         </tr>
@@ -240,15 +298,43 @@
                 </a>
             </div>
         </div>
+        <div class="ofertas2">
+            <div calss="Londres">
+                <a href=""><img src="RecursosGraficos/Londres.jfif">
+                    <h3>Vuela vuela...</h3>
+                    <p>Vuelos a Londres desde 29€</p>
+                </a>
+            </div>
+            <div calss="Paris">
+                <a href=""><img src="RecursosGraficos/Paris.jfif">
+                    <h3>Para disfrutar en pareja</h3>
+                    <p>Vuelos a París desde 19€</p>
+                </a>
+            </div>
+            <div calss="NewYork">
+                <a href=""><img src="RecursosGraficos/NewYork.jfif">
+                    <h3>¿Te atreves?</h3>
+                    <p>Cruza el charco desde tan sólo 339€</p>
+                </a>
+            </div>
+            <div calss="Barcelona">
+                <a href=""><img src="RecursosGraficos/Barcelona.jfif">
+                    <h3>Vuela a la ciudad de moda</h3>
+                    <p>Al mejor precio. ¡Ahora hasta el 31 de marzo!</p>
+                </a>
+            </div>
+            <div calss="Dubai">
+                <a href=""><img src="RecursosGraficos/Dubai.jfif">
+                    <h3>Oasis en el desierto...</h3>
+                    <p>Vuelos + 7 noches de hotel en Dubai desde 899€</p>
+                </a>
+            </div>
+
+        </div>
+
     </div>
 
     <div class="Jorge">
-        <tr>
-            <td colspan="5">
-                <h1>Enlaces útiles</h1>
-            </td>
-        </tr>
-
         <table class="contacto">
             <thead class="cabecera">
                 <tr>
@@ -288,6 +374,7 @@
                 <td><a href="https://grupo.iberia.es/about_us" target="_blank">Iberia España</a></td>
                 <td><a href="https://www.aireuropa.com/es/es/aea/informacion-para-volar/informacion-corporativa.html"
                         target="_blank">Air Europa</a></td>
+                <td></td>
             </tr>
 
         </table>
