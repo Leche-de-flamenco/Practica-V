@@ -23,6 +23,13 @@
     left: 18%;
 }
 
+.Victor .cuadro3{
+    position: absolute;
+    border-right: solid 2px;
+    border-color: black;
+    height:140px;
+    left: 12%;  
+}
 
 .Victor fieldset{
     position: relative;
