@@ -53,140 +53,54 @@
         </nav>
     </div>
 
+     
     <div class="Victor">
 
         <nav>
-            <ul class="menu">
-                <li class="lista"><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></li>
-                <li class="lista"><a href="#" onclick="showForm('formulariovuelta')"><span></span>Ida y Vuelta</a></li>
+            <fieldset id="formularioida" style="display: block">
 
-            </ul>
-            <fieldset id="formularioida" style="display: none">
-
-                <table border="1">
+                <table >
                     <form>
-                        <tr>
+                        <div class="cuadro1">
+                        </div>
+                        <div class="cuadro2">
+                        </div>   
+
+                        <tr></tr>
+
+                        <tr class="cambform">
+                            <th >
+                                <input type="button" a href="#" onclick="showForm('ocultar')" value="Formulario Ida y Vuelta">
+                            </th>
+                        </tr>
+                        
+                        <tr class="cambform" >
+                            <th></th>
+                            <th></th>
                             <th>
                                 Introduzca origen
-                                <select name="origen">
-                                    <option selected="">Elija su destino</option>
-                                    <option>Dubai</option>
-                                    <option>Londres</option>
-                                    <option>Barcelona</option>
-                                    <option>NewYork</option>
-                                    <option>París</option>
-                                </select><input type="tel" placeholder="Tenerife">
+                                <input type="tel" placeholder="Tenerife">
                             </th>
 
                             <th>
                                 Introduzca destino
-                                <select name="origen">
-                                    <option selected="">Elija su destino</option>
-                                    <option>Dubai</option>
-                                    <option>Londres</option>
-                                    <option>Barcelona</option>
-                                    <option>NewYork</option>
-                                    <option>París</option>
-                                </select>
+                                <input type="tel" placeholder="Madrid">
                             </th>
 
-                        </tr>
-
-                        <tr>
-                            <th>
-                                Ida
-                                <input type="datetime-local" placeholder="local">
-
-                            </th>
-                            <th>
-                                Numero de pasajeros
-                                <select name="pasj">
-                                    <option selected=""></option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </th>
-
-                        </tr>
-                        <tr>
-                            <th>
-                                Num.Adultos
-                                <select name="pasj">
-                                    <option selected=""></option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-
-                            </th>
-                            <th>
-                        </tr>
-                        <tr>
                             <th>
                                 Descuento de residente
+                                <br>
                                 <input type="checkbox">
                             </th>
-
-                            <th>
-                                Asiento Extra
-                                <input type="checkbox">
-                            </th>
-
-
-
-                            <th class="boton" colspan="2">
-
-                                <input type="button" href="*" value="Buscar">
-
-                            </th>
-
-                        </tr>
-                    </form>
-                </table>
-            </fieldset>
-
-
-            <fieldset id="formulariovuelta" style="display: none">
-
-                <table border="1">
-                    <form>
-                        <tr>
-                            <th>
-                                Introduzca origen
-                                <select name="origen">
-                                    <option selected="">Elija su destino</option>
-                                    <option>Dubai</option>
-                                    <option>Londres</option>
-                                    <option>Barcelona</option>
-                                    <option>NewYork</option>
-                                    <option>París</option>
-                                </select>
-                            </th>
-
-                            <th>
-                                Introduzca destino
-                                <select name="origen">
-                                    <option selected="">Elija su destino</option>
-                                    <option>Dubai</option>
-                                    <option>Londres</option>
-                                    <option>Barcelona</option>
-                                    <option>NewYork</option>
-                                    <option>París</option>
-                                </select>
-                            </th>
-
                         </tr>
 
+               
+
                         <tr>
+                            <th></th>
+                            <th></th>
                             <th>
                                 Ida
-                                <input type="datetime-local" placeholder="local">
-                                Vuelta
                                 <input type="datetime-local" placeholder="local">
 
                             </th>
@@ -201,8 +115,14 @@
                                 </select>
                             </th>
 
+                            <th>
+                                Asiento Extra
+                                <input type="checkbox">
+                            </th>
                         </tr>
                         <tr>
+                            <th></th>
+                            <th></th>
                             <th>
                                 Num.Adultos
                                 <select name="pasj">
@@ -226,20 +146,10 @@
                                     <option>5</option>
                                 </select>
                             </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                Descuento de residente
-                                <input type="checkbox">
-                            </th>
-
-                            <th>
-                                Asiento Extra
-                                <input type="checkbox">
-                            </th>
-
-
-
+                        
+                       
+                        
+                            
                             <th class="boton" colspan="2">
 
                                 <input type="button" href="*" value="Buscar">
@@ -247,11 +157,119 @@
                             </th>
 
                         </tr>
+                       
+                    </form>
+                </table>
+            </fieldset>
+
+
+            <fieldset id="formulariovuelta" style="display: none">
+
+                <table>
+                    <form>
+
+                         <div class="cuadro1">
+                        </div>
+                        <div class="cuadro3">
+                        </div>   
+
+                        <tr class="cambform">
+                            <th >
+                                <input type="button" a href="#" onclick="showForm('ocultar2')" value="Formulario Ida">
+                            </th>
+                        </tr>
+                        
+                      
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>
+                                Introduzca origen
+                                <input type="tel" placeholder="Tenerife">
+                            </th>
+
+                            <th>
+                                Introduzca destino
+                                <input type="tel" placeholder="Madrid">
+                            </th>
+
+                            <th>
+                                Descuento de residente
+                                <input type="checkbox">
+                            </th>
+                        </tr>
+
+                  
+
+                        <tr>
+                            <th></th>
+                            <th></th>
+                          
+                            <th>
+                                Ida
+                                <input type="datetime-local" placeholder="local">
+                                <br>
+                                Vuelta
+                                <input type="datetime-local" placeholder="local">
+                            </th>
+                            <th>
+                                Numero de pasajeros
+                                <select name="pasj">
+                                    <option selected="">1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </th>
+
+                            <th>
+                                Asiento Extra
+                                <input type="checkbox">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            
+                            <th>
+                                Num.Adultos
+                                <select name="pasj">
+                                    <option selected=""></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                            </th>
+                            <th>
+                                Num.Niños
+                                <select name="pasj">
+                                    <option selected=""></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </th>                        
+                            
+                            <th class="boton" colspan="2">
+
+                                <input type="button" href="*" value="Buscar">
+
+                            </th>
+
+                        </tr>
+                       
                     </form>
                 </table>
             </fieldset>
         </nav>
     </div>
+
 
 
     <div class="alberto">
