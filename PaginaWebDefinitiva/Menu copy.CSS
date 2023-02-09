@@ -225,7 +225,7 @@ body{
 
 .footer-basic {
     position: absolute;
-    top: 200%;
+    top: 250%;
     padding:40px 0;
     background-color:lightgray;
     color:#3F48CC;
@@ -305,7 +305,7 @@ body{
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
-  margin-top: 28%;
+  margin-top: 35%;
   transform: scale(0.8,0.8);
 }
 @media screen and (max-width: 992px) {
