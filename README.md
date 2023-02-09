@@ -1,3 +1,5 @@
 # Practica-V
-Pagina WEB.
-Archivos de la pagina web de una 
+Proyecto realizado para la asignatura de "Entornos de desarrollo" de el ciclo superior de desarrolo de aplicaciones web.
+Los requisitos para este proyecto consisten en realiar una pagina web con un menu principal y un minimo de 2 paginas adicionales conectados a esta, todo esto a peticion de un cliente. En nuestro nos han encargado realizar este trabajo con la tematica de una aerolinea.
+En nuestro caso hemos trabajo 5 desarrolladores en este proyecto y hemos decidido estructurarlo de la siguiente manera.
+Cuando el usuario entra por primera vez a la pagina de encuentra con un menu simple donde podra seleccionar entre 2 idiomas, una vez selecciona tendra una pagina con un menu superior que contiene diferentes opciones. Dentro de la pagina se encuentra un buscador de vuelos y un panel de ofertas, tanto esta como las demas paginas cuentan con un footer. En el menu superior encontreremos 3 links accesibles, el primero de ellos llamado "Check-in" te llevara a una pagina que contiene un formulario para poder realizar de forma online el check in de tu vuelo. El segundo de estos links lleva a un formulario de registro o bien de login si ya cuenta con una cuenta creada. Por ultimo encontramos un enlace llamado "Opiniones" que nos lleva hasta un formulario donde el usuario podra puntuar el servicio prestado por la compañia.
