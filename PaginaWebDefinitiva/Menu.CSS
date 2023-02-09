@@ -126,7 +126,7 @@ body{
     position: absolute;
     border-bottom:solid 2px;
     border-color: black;
-    width: 1000px;
+    width: 980px;
     top: 18%;
 }
 
@@ -151,7 +151,7 @@ body{
     background-color:rgb(233, 132, 172);
     border: 1px solid black;
     width: 1000px;
-    height: 140px;
+    height: 150px;
     border-radius: 2em;
     display: none;
     transition: display 2s;
