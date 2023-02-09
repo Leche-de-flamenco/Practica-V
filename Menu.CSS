@@ -1,14 +1,16 @@
 .Victor{
+    position:static;
     background-color: white;
     width: fit-content;
     height: fit-content;
-    margin: center;
-    margin-left:35%  ;
+    justify-content: center;
+    margin-left:30%;
+    margin:auto;
 }
 
 .Victor fieldset{
     position: relative;
-    background-color: pink;
+    background-color: #EC5B95;
     border: 1px solid black;
     width: fit-content;
     height: fit-content;
@@ -18,27 +20,26 @@
 }
 
 .Victor ul{
-    background-color: pink;
+    background-color: #EC5B95;
     border: 1px solid black;
     border-style: none;
-    width: 520px;
+    width: 500px;
     height: 30px;
     border-radius: 2em;
-    margin: auto;
-    align-items: initial
+    margin: center;
+    align-items: initial ;
 }
 
 
 .Victor a{
     color: black;
     text-decoration: none;
-    transition: 2s;
 }
 
 .Victor li{
     display: inline;
-    padding-left: 3px;
-    padding-right:3px ;
+    padding-left: 10%;
+    padding-right: 28%;
     content: hidden;
 }
 
@@ -52,7 +53,94 @@
     border-radius: 1em ;
     
 }
+.alberto .verano{
+    margin: auto;
+    border-top: solid thick rgb(240, 61, 186);
+    border-bottom: solid thick rgb(34, 34, 164) ;
+    max-width: max-content;
+    background-color: rgb(34, 34, 164);
+    color:rgb(240, 61, 186);
+    font-family: sans-serif;
+    margin-bottom: 5%;
+}
+.alberto h2{
+    padding-left: 10%;
+}
+.alberto li{
+    font-weight: bold;
+}
+.alberto span{
+    font-weight: normal;
+}
+.alberto li{
+    padding-left: 5%;
+    list-style-image:url("RecursosGraficos/Boton.jpg") ;
+    list-style-position: inside;
+}
+.alberto .verano img{
+    width: 500px;
+    height: 200px;
+}
+.alberto .verano a{
 
+    display: block;
+    margin: auto;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 5%;
+    padding: 3%;
+    text-align: center;
+    background-color:rgb(240, 61, 186) ;
+    border:solid black;
+    box-shadow: 2px 2px 2px black;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    transition: 2s;
+
+}
+.alberto .verano a:hover{
+    font-size:large;
+}
+.alberto .ofertas div{
+    float: left;
+    margin: 2%;
+    border-top: solid thick rgb(240, 61, 186);
+    border-bottom: solid thick rgb(34, 34, 164) ;
+    max-width: max-content;
+    max-height: fit-content;
+    background-color: rgb(34, 34, 164);
+    color:rgb(240, 61, 186);
+    font-family: sans-serif;
+    margin-bottom: 3%;
+    width: 250px;
+    height: 300px;
+    transition: 1s;
+
+}
+.alberto .ofertas img{
+    width: 250px;
+    height: 150px;
+}
+.alberto .ofertas p,h3{
+    padding: 3%;
+}
+.alberto .ofertas div:hover{
+    box-shadow: 0 0 10px 5px rgb(240, 61, 186);
+    transform: rotateX('10');
+    transform: scale(1.2);
+}
+.alberto .ofertas a{
+    display: block;
+    text-decoration: none;
+    color:rgb(240, 61, 186);
+
+}
+
+.Jorge img{
+    width: 40px;
+    height: 40px;
+}
 .Jorge body
 {
     font-family:Arial;
@@ -107,30 +195,86 @@
 
 .Jorge .descarga
 {
-	height:170px;
-	border:solid 1px;
-	width:510px;
-	position:relative;
-	bottom:220px;
-	left:700px;
+
+    height:170px;
+    border:solid 1px;
+    width:510px;
+    position:relative;
+    bottom:220px;
+    left:700px;
 }
 
 .Jorge .google 
 {
-	border:solid 1px;
+    border:solid 1px;
 
    
 }
 
 .Jorge .apple
 {
-	border:solid 1px;
+    border:solid 1px;
 	
 }
+#Alejandrocabecera{
+    background-color: lightgrey;
+}
+.Alejandrologo{
+    margin-left: 1em;
+    width: 14em;
+    height: 7em;
+    background-image: url("RecursosGraficos/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.Alejandrotodo{
+    max-width: 100%;
+    margin: auto;  
+    margin-top: -20px;
+}
 
+.Alejandromenu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    background-color: rgb(63, 72, 204);
+    margin-top: -1px;
+}
 
+.Alejandromenu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
 
+.Alejandromenu li:hover{
+    background-color: rgb( 236, 91, 149);
+}
 
+.Alejandrodesplegable{
+    position: absolute;
+    display: none;
+    padding-left: 1px;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(63, 72, 204);
+    z-index: 1;
+}
 
+.Alejandromenu li:hover .Alejandrodesplegable{
+    display: block;
+}
 
+.Alejandrodesplegable li:hover{
+    background-color: rgb( 236, 91, 149);
+}
+
+.Alejandrodesplegable li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
