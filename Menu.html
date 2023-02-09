@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Menu.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
     <title>Document</title>
 </head>
@@ -55,16 +56,26 @@
     <div class="Victor">
 
         <nav>
-            <ul class="menu">
-                <li class="lista"><a href="#" onclick="showForm('formularioida')"><span></span>Ida</a></li>
-                <li class="lista"><a href="#" onclick="showForm('formulariovuelta')"><span></span>Ida y Vuelta</a></li>
+            <fieldset id="formularioida" style="display: block">
 
-            </ul>
-            <fieldset id="formularioida" style="display: none">
-
-                <table border="1">
+                <table >
                     <form>
-                        <tr>
+                        <div class="cuadro1">
+                        </div>
+                        <div class="cuadro2">
+                        </div>   
+
+                        <tr></tr>
+
+                        <tr class="cambform">
+                            <th >
+                                <input type="button" a href="#" onclick="showForm('ocultar')" value="Formulario Ida y Vuelta">
+                            </th>
+                        </tr>
+                        
+                        <tr class="cambform" >
+                            <th></th>
+                            <th></th>
                             <th>
                                 Introduzca origen
                                 <input type="tel" placeholder="Tenerife">
@@ -75,9 +86,18 @@
                                 <input type="tel" placeholder="Madrid">
                             </th>
 
+                            <th>
+                                Descuento de residente
+                                <br>
+                                <input type="checkbox">
+                            </th>
                         </tr>
 
+               
+
                         <tr>
+                            <th></th>
+                            <th></th>
                             <th>
                                 Ida
                                 <input type="datetime-local" placeholder="local">
@@ -94,8 +114,14 @@
                                 </select>
                             </th>
 
+                            <th>
+                                Asiento Extra
+                                <input type="checkbox">
+                            </th>
                         </tr>
                         <tr>
+                            <th></th>
+                            <th></th>
                             <th>
                                 Num.Adultos
                                 <select name="pasj">
@@ -119,20 +145,10 @@
                                     <option>5</option>
                                 </select>
                             </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                Descuento de residente
-                                <input type="checkbox">
-                            </th>
-
-                            <th>
-                                Asiento Extra
-                                <input type="checkbox">
-                            </th>
-
-
-
+                        
+                       
+                        
+                            
                             <th class="boton" colspan="2">
 
                                 <input type="button" href="*" value="Buscar">
@@ -140,9 +156,7 @@
                             </th>
 
                         </tr>
-                        <tr>
-                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
-                        </tr>
+                       
                     </form>
                 </table>
             </fieldset>
@@ -150,9 +164,24 @@
 
             <fieldset id="formulariovuelta" style="display: none">
 
-                <table border="1">
+                <table>
                     <form>
+
+                         <div class="cuadro1">
+                        </div>
+                        <div class="cuadro3">
+                        </div>   
+
+                        <tr class="cambform">
+                            <th >
+                                <input type="button" a href="#" onclick="showForm('ocultar2')" value="Formulario Ida">
+                            </th>
+                        </tr>
+                        
+                      
                         <tr>
+                            <th></th>
+                            <th></th>
                             <th>
                                 Introduzca origen
                                 <input type="tel" placeholder="Tenerife">
@@ -163,15 +192,24 @@
                                 <input type="tel" placeholder="Madrid">
                             </th>
 
+                            <th>
+                                Descuento de residente
+                                <input type="checkbox">
+                            </th>
                         </tr>
 
+                  
+
                         <tr>
+                            <th></th>
+                            <th></th>
+                          
                             <th>
                                 Ida
                                 <input type="datetime-local" placeholder="local">
+                                <br>
                                 Vuelta
                                 <input type="datetime-local" placeholder="local">
-
                             </th>
                             <th>
                                 Numero de pasajeros
@@ -184,8 +222,15 @@
                                 </select>
                             </th>
 
+                            <th>
+                                Asiento Extra
+                                <input type="checkbox">
+                            </th>
                         </tr>
                         <tr>
+                            <th></th>
+                            <th></th>
+                            
                             <th>
                                 Num.Adultos
                                 <select name="pasj">
@@ -208,21 +253,8 @@
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                Descuento de residente
-                                <input type="checkbox">
-                            </th>
-
-                            <th>
-                                Asiento Extra
-                                <input type="checkbox">
-                            </th>
-
-
-
+                            </th>                        
+                            
                             <th class="boton" colspan="2">
 
                                 <input type="button" href="*" value="Buscar">
@@ -230,9 +262,7 @@
                             </th>
 
                         </tr>
-                        <tr>
-                            <input type="button" a href="#" onclick="showForm('ocultar')" value="Ocultar Formulario">
-                        </tr>
+                       
                     </form>
                 </table>
             </fieldset>
@@ -345,18 +375,14 @@
             var formularioIda = document.getElementById("formularioida");
             var formularioVuelta = document.getElementById("formulariovuelta");
            
-            if (formId === "formularioida") {
-                formularioIda.style.display = "block";
-                formularioVuelta.style.display = "none";
-            } else {
-                formularioIda.style.display = "none";
-                formularioVuelta.style.display = "block";
-            }
+          
             if(formId== "ocultar"){
                 formularioIda.style.display = "none";
+                formularioVuelta.style.display = "block";
+            }if(formId== "ocultar2"){
+                formularioIda.style.display = "block";
                 formularioVuelta.style.display = "none";
-            }
-            
+            } 
 
         }      
     </script>

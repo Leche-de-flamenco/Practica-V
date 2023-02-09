@@ -69,56 +69,143 @@ body{
     text-decoration: none;
 }
 .Victor{
+    position:static;
     width: fit-content;
     height: fit-content;
-    margin: auto;
-    margin-bottom: 5%;
+    justify-content: center;
+    margin-left:30%;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+    .Victor table, tr, th, td {
+      display: block;
+    }
+    .Victor th {
+      margin-bottom: 10px;
+    }
+    .Victor input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    .Victor input[type="button"], input[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+.Victor .cuadro1{
+    position: absolute;
+    border-bottom:solid 2px;
+    border-color: black;
+    width: 1000px;
+    top: 18%;
+}
+
+.Victor .cuadro2{
+    position: absolute;
+    border-right: solid 2px;
+    border-color: black;
+    height:140px;
+    left: 19%;
+}
+
+.Victor .cuadro3{
+    position: absolute;
+    border-right: solid 2px;
+    border-color: black;
+    height:140px;
+    left: 12.5%;  
+}
+
 .Victor fieldset{
     position: relative;
-    background-color: pink;
+    background-color:rgb(233, 132, 172);
     border: 1px solid black;
-    width: fit-content;
-    height: fit-content;
+    width: 1000px;
+    height: 140px;
     border-radius: 2em;
     display: none;
     transition: display 2s;
+    margin-bottom: 20px;
+}
+.Victor .contenido{
+    position: relative;
+    left: 20%;
 }
 
-.Victor ul{
-    background-color: pink;
-    border: 1px solid black;
-    border-style: none;
-    width: 520px;
-    height: 30px;
-    border-radius: 2em;
-    margin: auto;
-    align-items: initial
+.Victor .cambform{
+
+    border: solid;
+    border-color: black;
+    background-color:rgb(233, 132, 172);
+   
+} 
+.Victor tr{
+    border:solid ;
+}
+.Victor .cambform input{
+
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+    -webkit-appearance: button; /* for input */
+        -moz-user-select: none;
+        -ms-user-select: none;
+
+}
+.Victor .cambform input:hover{
+   
+    transition: 0.5s;
+    color: rgb(233, 132, 172);
+
 }
 
 
 .Victor a{
     color: black;
     text-decoration: none;
-    transition: 2s;
 }
 
 .Victor li{
     display: inline;
-    padding-left: 3px;
-    padding-right:3px ;
+    padding-left: 10%;
+    padding-right: 28%;
     content: hidden;
 }
 
-.Victor table,th{
-    border: none;
-   
+.Victor .cambform{
+    border: solid;
 }
 
-.Victor input[type=submit]{
-    
+.Victor input[type=button]{
+
+    border-radius: 1em;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: button; /* for input */
+       -moz-user-select: none;
+        -ms-user-select: none;
+    transition: 0.5s;
+}
+
+
+.Victor .boton input[type=button]:hover{
     border-radius: 1em ;
-    
+    background-color: aliceblue;
+    color:rgb(233, 132, 172);
 }
 
 .alberto .verano{
