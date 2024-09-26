@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="Check-in.css" rel="stylesheet" type="text/css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Flamingo Airlines</title>
+</head>
+<body>
+    
+    <fieldset>
+       
+            
+            <table>
+                
+                <tr>
+                    <div class="Cabecera">
+                        <th><a href="#" id="origenDestino" onclick="showForm('form1')">Origin/Destination</a></th>
+                        <th><a href="#" id="emailComprador" onclick="showForm('form2')">Your e-mail</a></th>
+                                                                    
+                    </div>
+
+                </tr>   
+            </table>    
+              
+            <form action="Checkin1" form="form1">
+             
+                <table>     
+
+                    <tr class="Email">
+
+                        <div class="Contenido-Email">
+
+                            <td>
+                                <input type="text" value="" placeholder="Reservation code">
+                            </td>
+
+                            <td>
+                                <input type="email" value="" placeholder="Your e-mail">
+                            </td>
+
+                        </div>
+
+                    </tr>
+
+                    <tr>
+                        <td >
+                            <input type="button" value="Realizar Check-in">
+                        </td>
+                    </tr>
+                
+                </table>
+
+                <form action="Checkin2" id="form2">
+             
+                    <table>     
+    
+                        <tr class="OrigenDestino">
+    
+                            <div class="Contenido-origen">
+    
+                                <td>
+                                    <input type="text" value="" placeholder="Reservation code">
+                                </td>
+    
+                                <td>
+                                    <input type="" value="" placeholder="Airport">
+                                </td>
+    
+                            </div>
+    
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input type="datetime-local" placeholder="DD/MM/YYYY">
+                            </td>
+
+                            <td>
+                                <input type="checkbox">Morning flight
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td >
+                                <input type="button" value="Complete check-in">
+                            </td>
+                        </tr>
+                    
+                    </table>
+                
+            </form>    
+            
+
+        
+
+            <script>
+                function showForm(formId) {
+                    var form1 = document.getElementById("form1");
+                    var form2 = document.getElementById("form2");
+                    if (formId === "form1") {
+                        form1.style.display = "block";
+                        form2.style.display = "none";
+                    } else {
+                        form1.style.display = "none";
+                        form2.style.display = "block";
+                    }
+                
+                }      
+           </script> 
+  </body>
+</html>
